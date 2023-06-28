@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 
@@ -21,42 +21,45 @@ title {
 body {
     background-color: var(--main-bg-color);
     font-family: "Outfit", sans-serif;
+    /* font-size: 0.94em; */
     font-size: 15px;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
     height: 100vh;
-    width: 15em;
 }
 
 .container img {
-    border-radius: 1rem;
+    border-radius: 1.75em;
     max-width: 100%;
-    padding: 0.7rem;
+    padding: 1.02em;
 }
 
-.container {
+main {
     background-color: var(--bg-color-white);
     text-align: center;
-    border-radius: 1rem;
-    box-shadow: 10px 10px 14px #CDD9E8;
+    border-radius: 1.25em;
+    box-shadow: 0.5em 0.85em 0.85em #CDD9E8;
+    /* box-shadow: 0.625em 0.625em 0.875em #CDD9E8; */
+    width: 21.24em;
+    height: 32.7em;
 }
 
-#head {
+h1 {
     color: var(--dark-blue);
+    font-size: 22px;
+    /* font-size: 1.4em; */
     font-weight: 700;
+    padding-bottom: 0.7em;
 }
 
-#description {
+p {
     color: var(--grayish-blue);
-    padding-top: 0.5em;
-    font-size: 11px;
     font-weight: 400;
 }
 
 .text-content {
-    margin: 0.2em 1.24em 1.8em 1.24em;
+    margin: 0.4em 1.77em 1.8em 1.77em;
     padding-bottom: 0.2em;
 }
 
@@ -68,4 +71,11 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width = 375px) {
+    main {
+        width: 21.24em;
+        height: 32.7em;
+    }
 }
